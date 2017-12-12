@@ -1,0 +1,2633 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:og="http://opengraphprotocol.org/schema/"
+      xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+        	<title>Horror Movies - Metacritic</title>
+	
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+
+    
+    <meta name="description" content="Horror Movies at Metacritic.com">
+
+    
+    
+    <meta name="viewport" content="width=1024">
+
+
+    
+    
+
+    
+    <meta name="application-name" content="Metacritic">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="/images/win8tile/76bf1426-2886-4b87-ae1c-06424b6bb8a2.png">
+
+    
+                        <meta property="og:title" content="Horror Movies">
+                    <meta property="og:type" content="website">
+                    <meta property="og:url" content="http://www.metacritic.com/browse/movies/genre/date/horror">
+                    <meta property="og:image" content="http://static.metacritic.com/images/icons/mc_fb_og.png">
+                    <meta property="og:site_name" content="Metacritic">
+                    <meta property="fb:app_id" content="123113677890173">
+                    <meta property="og:description" content="Horror Movies at Metacritic.com">
+            
+    
+    
+
+    
+
+    
+    <link rel="stylesheet" href="/css/fonts/proxima-nova/stylesheet.css" type="text/css" charset="utf-8" />
+    
+    <link rel="stylesheet" href="/css/global.min.1512430323.css" type="text/css">
+<link rel="stylesheet" href="/css/filters/base.min.1512430246.css" type="text/css">
+
+
+    
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+
+    
+     
+        <link rel="canonical" href="http://www.metacritic.com/browse/movies/genre/date/horror" />
+        
+    
+    
+    
+        		
+							<link rel="next" href="/browse/movies/genre/date/horror?view=detailed&page=1"/>
+		    
+    
+    
+    
+    <script type="text/javascript" src="/js/global.min.1512430323.js"></script>
+
+
+    
+    <script src="//cdn.optimizely.com/js/2333541344.js"></script>
+
+    
+                        
+            <script async type="text/javascript" src="//js.indexww.com/ht/ls-metacritic.js"></script>
+            
+            
+    <script type="text/javascript">
+        
+        
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        window.metac_ads_pushdisplay = window.metac_ads_pushdisplay || [];
+        window.metac_gallery_ads_pushdisplay = window.metac_gallery_ads_pushdisplay || [];
+        window.metac_hover_ads_pushdisplay = window.metac_hover_ads_pushdisplay || [];
+        (function() {
+            var gads = document.createElement('script');
+            gads.async = true;
+            gads.type = 'text/javascript';
+            var useSSL = 'https:' == document.location.protocol;
+            gads.src = (useSSL ? 'https:' : 'http:') +'//www.googletagservices.com/tag/js/gpt.js';
+            var node = document.getElementsByTagName('script')[0];
+            node.parentNode.insertBefore(gads, node);
+        })();
+        
+    </script>
+
+    <script type="text/javascript">
+        
+    	MC_USER_LOGGED_IN = false;
+        
+        
+                    
+            window._taboola = window._taboola || [];
+            window.metac_tContentWidget = window.metac_tContentWidget || [];
+            _taboola.push({
+                other : 'auto'
+            });
+            !function (e, f, u) {
+                e.async = 1;
+                e.src = u;
+                f.parentNode.insertBefore(e, f);
+            }(document.createElement('script'),
+              document.getElementsByTagName('script')[0],
+              '//cdn.taboola.com/libtrc/cbsinteractive-metacritic/loader.js');
+            
+            </script>
+
+    
+    
+
+    
+    <script type="text/javascript" src="//native.sharethrough.com/assets/tag.js" async></script>
+
+    
+    <script src="//vidtech.cbsinteractive.com/uvpjs/2.5.8/CBSI-PLAYER.js"></script>
+    <script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+
+</head>
+<body>
+
+
+
+<div id="site_layout">
+    <div id="masthead">
+        
+
+                    <div id="omnibar_wrapper">
+                
+                        
+                        <div id="omnibar" class="ad_unit">
+                            
+                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_omnibar = googletag.defineSlot("/8264/aw-metacritic/movies",[980,45], "omnibar").addService(googletag.pubads()).setTargeting("pos", "top").setCollapseEmptyDiv(true, true);
+                                                        
+                        
+                        });
+                        
+
+                        window.metac_ads_pushdisplay.push("omnibar");
+                                    </script>
+                                        </div>
+                        
+
+
+            </div>
+        
+        <div id="content_header_wrapper">
+            <header id="top_header">
+    <nav id="primary_nav" class="inset_left2 inset_right2">
+        <div class="primary_nav_row">
+            <div class="logo">
+                <a href="http://www.metacritic.com"><img src="/images/mobile/logo.png" alt="Metacritic logo"></a>
+            </div>
+
+            <div id="primary_menu_wrapper">
+                <div id="primary_menu_items">
+                    <div class="primary_menu_items_row">
+                                                    <div id="primary_menu_item_movies" class="primary_menu_item selected">
+                                <span class="primary_menu_text">
+                                    <a href="http://www.metacritic.com/movie">
+                                        Movies
+                                    </a>
+                                </span>
+                            </div>
+                                                    <div id="primary_menu_item_games" class="primary_menu_item">
+                                <span class="primary_menu_text">
+                                    <a href="http://www.metacritic.com/game">
+                                        Games
+                                    </a>
+                                </span>
+                            </div>
+                                                    <div id="primary_menu_item_tv" class="primary_menu_item">
+                                <span class="primary_menu_text">
+                                    <a href="http://www.metacritic.com/tv">
+                                        TV
+                                    </a>
+                                </span>
+                            </div>
+                                                    <div id="primary_menu_item_music" class="primary_menu_item">
+                                <span class="primary_menu_text">
+                                    <a href="http://www.metacritic.com/music">
+                                        Music
+                                    </a>
+                                </span>
+                            </div>
+                                                    <div id="primary_menu_item_features" class="primary_menu_item">
+                                <span class="primary_menu_text">
+                                    <a href="http://www.metacritic.com/feature">
+                                        Features
+                                    </a>
+                                </span>
+                            </div>
+                                                <div id="primary_menu_item_login" class="primary_menu_item">
+                            
+                                                            <span class="primary_menu_text">
+                                    <a id="login" href="https://secure.metacritic.com/login">LOG&nbsp;IN</a> / <a id="signup" href="https://secure.metacritic.com/signup">SIGN&nbsp;UP</a>
+                                </span>
+                                                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="primary_search">
+                <div id="primary_search_wrapper">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <span class="search_label">SEARCH</span>
+                </div>
+            </div>
+
+            <div id="primary_social" class="social_round">
+                <a href="http://www.facebook.com/Metacritic" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+                <a href="http://twitter.com/metacritic" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="secondary_nav" class="hover_none">
+                                                                        
+                
+                                                                                                                    <div id="secondary_nav_items_movies" class="secondary_nav_items">
+                    <table id="secondary_nav_table_movies" class="secondary_nav_table">
+                        <tr>
+                                                    <td class="menu_col_left">
+                                                                                                                                                                                    <div class="menu_w_icon">
+                                            <a href="/browse/movies/release-date/theaters/date">
+                                                <img src="http://www.metacritic.com/images/icons/nav/ticket.png">
+                                                <span>In Theaters</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                                                                                        <div class="menu_w_icon">
+                                            <a href="/browse/movies/release-date/coming-soon/date">
+                                                <img src="http://www.metacritic.com/images/icons/nav/clock.png">
+                                                <span>Coming Soon</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                                                                                        <div class="menu_w_icon">
+                                            <a href="/browse/dvds/release-date/new-releases/date">
+                                                <img src="http://www.metacritic.com/images/icons/nav/couch.png">
+                                                <span>DVD & Streaming</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                                                                                        <div class="menu_w_icon">
+                                            <a href="/feature/more/best-of-2016">
+                                                <img src="http://www.metacritic.com/images/icons/nav/ribbon.png">
+                                                <span>Best of 2016</span>
+                                            </a>
+                                        </div>
+                                                                                                </td>
+                                                                            <td class="menu_col_mid">
+                                                                                                                                <div class="menu_ref">
+                                        <a href="/browse/movies/score/metascore/90day/filtered">
+                                            High Scores
+                                        </a>
+                                    </div>
+                                                                                                                                                                <div class="menu_ref">
+                                        <a href="/browse/movies/score/metascore/all/filtered/netflix">
+                                            Best of Netflix
+                                        </a>
+                                    </div>
+                                                                                                                                                                <div class="menu_ref">
+                                        <a href="/browse/movies/score/metascore/all/filtered/piv">
+                                            Best of Amazon
+                                        </a>
+                                    </div>
+                                                                                                                                                                <div class="menu_ref">
+                                        <a href="/browse/movies/genre/date/action">
+                                            Browse by Genre
+                                        </a>
+                                    </div>
+                                                                                                                                                                <div class="menu_ref">
+                                        <a href="/browse/movies/critic/reviewed">
+                                            Critics
+                                        </a>
+                                    </div>
+                                                                                                                                                                <div class="menu_ref">
+                                        <a href="/browse/movies/publication/reviewed">
+                                            Publications
+                                        </a>
+                                    </div>
+                                                                                                                                                                <div class="menu_ref">
+                                        <a href="/browse/movies/title/dvd">
+                                            A - Z Index
+                                        </a>
+                                    </div>
+                                                                                                                                                                <div class="menu_ref">
+                                        <a href="http://www.metacritic.com/feature/movie">
+                                            Movie Articles
+                                        </a>
+                                    </div>
+                                                                                        </td>
+                                                                                                    <td class="menu_col_right larger_images no_title_separ">
+                                    <div class="pad_btm2">
+                                        <a href="http://www.metacritic.com/browse/movies/release-date/theaters/metascore" class="strip_title oswald">
+                                            Featured Movies
+                                        </a>
+                                    </div>
+                                    <div class="image_strip">
+                                        <div class="product"><div class="img_wrapper"><a href="/movie/phantom-thread"><img src="http://static.metacritic.com/images/products/movies/6/3eb74c78fedb8305760201488ec7006f-250h.jpg" alt="Phantom Thread" />
+
+        
+<div class="metascore_w large no_tbd movie positive">94</div>
+<span class="release_date">Dec 25</span></a></div><div class="title_wrapper"><a href="/movie/phantom-thread"><span>Phantom Thread</span></a></div></div><div class="product"><div class="img_wrapper"><a href="/movie/jumanji-welcome-to-the-jungle"><img src="http://static.metacritic.com/images/products/movies/5/685ae5345ff600e1ee65ec7a7b842e9c-250h.jpg" alt="Jumanji: Welcome to the Jungle" />
+
+        
+<div class="metascore_w large no_tbd movie mixed">55</div>
+<span class="release_date">Dec 20</span></a></div><div class="title_wrapper"><a href="/movie/jumanji-welcome-to-the-jungle"><span>Jumanji: Welcome to the Jungle</span></a></div></div><div class="product"><div class="img_wrapper"><a href="/movie/call-me-by-your-name"><img src="http://static.metacritic.com/images/products/movies/6/27a0a05b545a58a1d64c62cb62ddcc08-250h.jpg" alt="Call Me by Your Name" />
+
+        
+<div class="metascore_w large no_tbd movie positive">95</div>
+<span class="release_date">Nov 24</span></a></div><div class="title_wrapper"><a href="/movie/call-me-by-your-name"><span>Call Me by Your Name</span></a></div></div><div class="product last"><div class="img_wrapper"><a href="/movie/lady-bird"><img src="http://static.metacritic.com/images/products/movies/1/669cad84f3a40e87955b4c737c59cd33-250h.jpg" alt="Lady Bird" />
+
+        
+<div class="metascore_w large no_tbd movie positive">94</div>
+<span class="release_date">Nov 3</span></a></div><div class="title_wrapper"><a href="/movie/lady-bird"><span>Lady Bird</span></a></div></div>
+                                        <div class="clr"></div>
+                                    </div>
+                                    <div class="see_all">
+                                        <a href="http://www.metacritic.com/browse/movies/release-date/theaters/date">
+                                            See All Movies
+                                        </a>
+                                    </div>
+                            </td>
+                                                </tr>
+                    </table>
+                </div>
+                                                                            
+                
+                                                                                                                    <div id="secondary_nav_items_games" class="secondary_nav_items singleMenu">
+                    <table id="secondary_nav_table_games" class="secondary_nav_table">
+                        <tr>
+                                                                            <td class="menu_col_mid">
+                                                                                                                                <div class="menu_ref">
+                                        <a href="/game/playstation-4">
+                                            PS4
+                                        </a>
+                                    </div>
+                                                                                                                                                                <div class="menu_ref">
+                                        <a href="/game/xbox-one">
+                                            Xbox One
+                                        </a>
+                                    </div>
+                                                                                                                                                                <div class="menu_ref">
+                                        <a href="/game/pc">
+                                            PC
+                                        </a>
+                                    </div>
+                                                                                                                                                                <div class="menu_ref">
+                                        <a href="/game/switch">
+                                            Switch
+                                        </a>
+                                    </div>
+                                                                                                                                                                <div class="menu_ref">
+                                        <a href="/game/wii-u">
+                                            Wii U
+                                        </a>
+                                    </div>
+                                                                                                                                                                <div class="menu_ref">
+                                        <a href="/game/3ds">
+                                            3DS
+                                        </a>
+                                    </div>
+                                                                                                                                                                <div class="menu_ref">
+                                        <a href="/game/playstation-vita">
+                                            PS Vita
+                                        </a>
+                                    </div>
+                                                                                                                                                                <div class="menu_ref">
+                                        <a href="/game/ios">
+                                            iOS
+                                        </a>
+                                    </div>
+                                                                                                                                                                <div class="menu_ref">
+                                        <a href="/game/legacy">
+                                            Legacy
+                                        </a>
+                                    </div>
+                                                                                        </td>
+                                                                                                </tr>
+                    </table>
+                </div>
+                                                                            
+                
+                                                                                                                    
+                
+                                                                                                                    
+                
+                                                                        </nav>
+
+    <nav id="primary_search_results">
+        <div class="results_wrapper inset_left2 inset_right2 pad_btm2">
+            <div class="results_data">
+                <div class="results_header_wrapper pad_top1">
+                    
+                    <form action="/search" method="post" autocomplete="off">
+                        <div class="field innerLabel thin">
+                            <input type="text" class="field_input thin" tabindex="1" name="search_term" id="top_search" autocomplete="off"
+                                                            >
+                            <label for="top_search">SEARCH</label>
+                        </div>
+                        <input type="hidden" name="search_filter" value="all">
+                    </form>
+                    <span class="progress ">
+    <i class="fa fa-spinner"></i>
+</span>
+
+                </div>
+                <div class="info pad_btm1">No Results Found.</div>
+                <table class="lists">
+                    <tr>
+                        <td class="list r150 inset_right"> 
+                            <div class="result_header">MOVIES <span class="count"></span></div>
+                            <div class="results"></div>
+                            <div class="see_all">Find More Movies &raquo;</div>
+                            <div class="browse_az"><a href="/browse/movies/title/dvd">Browse A-Z</a></div>
+                        </td>
+                        <td class="list r30 inset_right"> 
+                            <div class="result_header">GAMES <span class="count"></span></div>
+                            <div class="results"></div>
+                            <div class="see_all">Find More Games &raquo;</div>
+                            <div class="browse_az"><a href="/browse/games/title">Browse A-Z</a></div>
+                        </td>
+                        <td class="list r70 inset_right"> 
+                            <div class="result_header">TV <span class="count"></span></div>
+                            <div class="results"></div>
+                            <div class="see_all">Find More TV &raquo;</div>
+                            <div class="browse_az"><a href="/browse/tv/title/all">Browse A-Z</a></div>
+                        </td>
+                        <td class="list r170 inset_right"> 
+                            <div class="result_header">MUSIC <span class="count"></span></div>
+                            <div class="results"></div>
+                            <div class="see_all">Find More Music &raquo;</div>
+                            <div class="browse_az"><a href="/browse/albums/artist">Browse A-Z</a></div>
+                        </td>
+                        <td class="list other inset_right"> 
+                            <div class="result_header">MORE <span class="count"></span></div>
+                            <div class="results"></div>
+                            <div class="see_all">Find More &raquo;</div>
+                        </td>
+                    </tr>
+                </table>
+
+                <div id="primary_search_selects" class="styled_select2 border_white">
+                    <div class="topper">
+                        <div class="disp_selected">
+                            <span class="text">By Popularity</span>
+                            <span class="sel">
+                                <i class="fa fa-chevron-down"></i>
+                                <i class="fa fa-check thin"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="options_scroll">
+                        <div class="options">
+                            <div class="option selected" data-mcqwval="popular">
+                                <span class="option_text">By Popularity</span>
+                                <span class="sel"><i class="fa fa-check thin"></i></span>
+                            </div>
+                            <div class="option" data-mcqwval="date">
+                                <span class="option_text">By Date</span>
+                                <span class="sel"><i class="fa fa-check thin"></i></span>
+                            </div>
+                            <div class="option" data-mcqwval="title">
+                                <span class="option_text">By Title</span>
+                                <span class="sel"><i class="fa fa-check thin"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="close">
+                    <i class="fa fa-times-circle" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+            <div id="nav_obar">
+<table>
+    <tr>
+                    <td class="nav_item thin">
+                <span class="nav_item_text">
+                                                                                    <a href="/browse/movies/release-date/theaters/date">New Releases</a>
+                </span>
+            </td>
+                    <td class="nav_item thin">
+                <span class="nav_item_text">
+                                                                                    <a href="/browse/movies/release-date/coming-soon/date">Coming Soon</a>
+                </span>
+            </td>
+                    <td class="nav_item thin">
+                <span class="nav_item_text">
+                                                                                    <a href="/browse/movies/score/metascore/90day/filtered">High Scores</a>
+                </span>
+            </td>
+                    <td class="nav_item thin">
+                <span class="nav_item_text">
+                                                                                    <a href="/browse/movies/title/dvd">Browse A-Z</a>
+                </span>
+            </td>
+                    <td class="nav_item thin">
+                <span class="nav_item_text">
+                                                                                    <a href="/browse/movies/publication/reviewed">Publications</a>
+                </span>
+            </td>
+                    <td class="nav_item thin">
+                <span class="nav_item_text">
+                                                                                    <a href="/browse/movies/critic/reviewed">Critics</a>
+                </span>
+            </td>
+                    <td class="nav_item thin">
+                <span class="nav_item_text">
+                                                                                    <a href="/browse/movies/people/reviewed">People</a>
+                </span>
+            </td>
+                    <td class="nav_item thin">
+                <span class="nav_item_text">
+                                                                                    <a href="/browse/movies/trailers/date">Trailers</a>
+                </span>
+            </td>
+            </tr>
+</table>
+</div>
+
+        </div>
+    </div>
+    
+                        <div id="mantle_skin" class="site_gutters">
+                
+                        
+                        <div id="skin" class="ad_unit">
+                            
+                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_skin = googletag.defineSlot("/8264/aw-metacritic/movies",[1600,1000], "skin").addService(googletag.pubads()).setTargeting("pos", "top");
+                                                        
+                        
+                        });
+                        
+
+                        window.metac_ads_pushdisplay.push("skin");
+                                    </script>
+                                        </div>
+                        
+
+
+        <div id="gutters" class="site_gutters">
+                    <div id="superleader">
+                        
+                            <div id="leader_top_wrapper" class="ad_height_min">
+                        <div id="leader_plus_top" class="ad_unit">
+                            
+                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_leader_plus_top = googletag.defineSlot("/8264/aw-metacritic/movies",[[728,90],[970,66],[970,250],[728,91]], "leader_plus_top").addService(googletag.pubads()).setTargeting("pos", "top");
+                                                        
+                        
+                        });
+                        
+
+                        window.metac_ads_pushdisplay.push("leader_plus_top");
+                                    </script>
+                                        </div>
+                            </div>
+                        
+
+</div>
+                <div id="gutters_mid" class="site_gutters">
+            <div id="gutters_btm" class="site_gutters">
+                <div id="gutters_top" class="site_gutters">
+                    <div id="container">
+
+<div id="col_layout" class="col_layout">
+        <div id="main_content" class="content_section mpu_layout">
+                <div class="layout">
+                        
+            
+                        <div id="main" class="col main_col">
+                    
+<div class="module filter genre_filter">
+        
+    
+    
+        <div class="module products_module list_product_summaries_module ">
+        <div class="head head_type_1"><div class="head_wrap"><h2 class="module_title">Movie Releases by Genre</h2></div></div>
+                  
+        <div class="body">
+                                                                                <div class="tabs ">
+        <div class="tab_wrap">
+                            <ul class="tabs tabs_type_1">            <li class="tab tab_type_1 tab_date first">
+                                    <span class="active"><span>By date</span></span>
+                            </li>
+                                                        <li class="tab tab_type_1 tab_metascore">
+                                                        <a  href="/browse/movies/genre/metascore/horror?view=detailed"><span>By Metascore</span></a>
+                            </li>
+                                                        <li class="tab tab_type_1 tab_userscore">
+                                                        <a  href="/browse/movies/genre/userscore/horror?view=detailed"><span>By user score</span></a>
+                            </li>
+                                                        <li class="tab tab_type_1 tab_name last">
+                                                        <a  href="/browse/movies/genre/name/horror?view=detailed"><span>By name</span></a>
+                            </li>
+            </ul>            
+            <div class="tab_options_wrap">
+                            
+                                        
+                <div class="list_view_options">
+    <ol class="view_options">
+                <li class="view_option first_view_option_active view_option_active">
+                            <span class="view_option detailed_view_option">Detailed List View</span>
+                    </li>
+                <li class="view_option last_view_option">
+                            <a rel="nofollow" class="view_option condensed_view_option" href="/browse/movies/genre/date/horror?view=condensed">Condensed List View</a>
+                    </li>
+            </ol>
+</div>
+
+                    </div>
+    
+    
+            </div>
+    </div>
+    
+    
+
+                        <div class="body_wrap has_genre_nav has_page_options">
+                                        <div class="genre_nav">
+        <div class="gn_wrap gn_wrap_mid"><div class="gn_wrap gn_wrap_top"><div class="gn_wrap gn_wrap_btm">
+                            <div class="genre_nav_label">
+                                            Browse by Genre
+                                    </div>
+                        <ul class="genre_nav">
+                                    <li class="genre genre_action first_genre">
+                                                                                                                                            <a class="genre_text action" href="/browse/movies/genre/date/action?view=detailed">Action</a>
+                                            </li>
+                                    <li class="genre genre_adventure">
+                                                                                                                                            <a class="genre_text adventure" href="/browse/movies/genre/date/adventure?view=detailed">Adventure</a>
+                                            </li>
+                                    <li class="genre genre_animation">
+                                                                                                                                            <a class="genre_text animation" href="/browse/movies/genre/date/animation?view=detailed">Animation</a>
+                                            </li>
+                                    <li class="genre genre_biography">
+                                                                                                                                            <a class="genre_text biography" href="/browse/movies/genre/date/biography?view=detailed">Biography</a>
+                                            </li>
+                                    <li class="genre genre_comedy">
+                                                                                                                                            <a class="genre_text comedy" href="/browse/movies/genre/date/comedy?view=detailed">Comedy</a>
+                                            </li>
+                                    <li class="genre genre_crime">
+                                                                                                                                            <a class="genre_text crime" href="/browse/movies/genre/date/crime?view=detailed">Crime</a>
+                                            </li>
+                                    <li class="genre genre_documentary">
+                                                                                                                                            <a class="genre_text documentary" href="/browse/movies/genre/date/documentary?view=detailed">Documentary</a>
+                                            </li>
+                                    <li class="genre genre_drama">
+                                                                                                                                            <a class="genre_text drama" href="/browse/movies/genre/date/drama?view=detailed">Drama</a>
+                                            </li>
+                                    <li class="genre genre_family">
+                                                                                                                                            <a class="genre_text family" href="/browse/movies/genre/date/family?view=detailed">Family</a>
+                                            </li>
+                                    <li class="genre genre_fantasy">
+                                                                                                                                            <a class="genre_text fantasy" href="/browse/movies/genre/date/fantasy?view=detailed">Fantasy</a>
+                                            </li>
+                                    <li class="genre genre_film_noir">
+                                                                                                                                            <a class="genre_text film_noir" href="/browse/movies/genre/date/film-noir?view=detailed">Film-Noir</a>
+                                            </li>
+                                    <li class="genre genre_history">
+                                                                                                                                            <a class="genre_text history" href="/browse/movies/genre/date/history?view=detailed">History</a>
+                                            </li>
+                                    <li class="genre genre_horror active_genre">
+                                                    <span class="genre_text horror">Horror</span>
+                                            </li>
+                                    <li class="genre genre_music">
+                                                                                                                                            <a class="genre_text music" href="/browse/movies/genre/date/music?view=detailed">Music</a>
+                                            </li>
+                                    <li class="genre genre_musical">
+                                                                                                                                            <a class="genre_text musical" href="/browse/movies/genre/date/musical?view=detailed">Musical</a>
+                                            </li>
+                                    <li class="genre genre_mystery">
+                                                                                                                                            <a class="genre_text mystery" href="/browse/movies/genre/date/mystery?view=detailed">Mystery</a>
+                                            </li>
+                                    <li class="genre genre_news">
+                                                                                                                                            <a class="genre_text news" href="/browse/movies/genre/date/news?view=detailed">News</a>
+                                            </li>
+                                    <li class="genre genre_reality_tv">
+                                                                                                                                            <a class="genre_text reality_tv" href="/browse/movies/genre/date/reality-tv?view=detailed">Reality-TV</a>
+                                            </li>
+                                    <li class="genre genre_romance">
+                                                                                                                                            <a class="genre_text romance" href="/browse/movies/genre/date/romance?view=detailed">Romance</a>
+                                            </li>
+                                    <li class="genre genre_sci_fi">
+                                                                                                                                            <a class="genre_text sci_fi" href="/browse/movies/genre/date/sci-fi?view=detailed">Sci-Fi</a>
+                                            </li>
+                                    <li class="genre genre_short">
+                                                                                                                                            <a class="genre_text short" href="/browse/movies/genre/date/short?view=detailed">Short</a>
+                                            </li>
+                                    <li class="genre genre_sport">
+                                                                                                                                            <a class="genre_text sport" href="/browse/movies/genre/date/sport?view=detailed">Sport</a>
+                                            </li>
+                                    <li class="genre genre_thriller">
+                                                                                                                                            <a class="genre_text thriller" href="/browse/movies/genre/date/thriller?view=detailed">Thriller</a>
+                                            </li>
+                                    <li class="genre genre_war">
+                                                                                                                                            <a class="genre_text war" href="/browse/movies/genre/date/war?view=detailed">War</a>
+                                            </li>
+                                    <li class="genre genre_western last_genre">
+                                                                                                                                            <a class="genre_text western" href="/browse/movies/genre/date/western?view=detailed">Western</a>
+                                            </li>
+                            </ul>
+        </div></div></div>
+    </div>
+
+                
+                
+
+<ol class="list_products list_product_summaries"><li class="product limited_release_product has_small_image first_product"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/the-shape-of-water">The Shape of Water</a></h3></div><a class="basic_stat product_score" href="/movie/the-shape-of-water">
+
+        
+<span class="metascore_w medium movie positive">86</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">December 1, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            R
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Cyndy Day,                                                             David Hewlett,                                                             Doug Jones,                                                             John Kapelos,                                                             Lauren Lee Smith,                                                             Michael Shannon,                                                             Michael Stuhlbarg,                                                             Morgan Kelly,                                                             Nick Searcy,                                                             Nigel Bennett,                                                             Octavia Spencer,                                                             Richard Jenkins,                                                             Sally Hawkins,                                                             Stewart Arnott                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Adventure,                                                             Drama,                                                             Thriller,                                                             Fantasy,                                                             Horror,                                                             Romance,                                                             War                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_outstanding">8.8</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">123 min</span>
+                    </li>
+                                                
+            </ul>
+
+                            <div class="product_basics release_type">Limited Release</div>
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/the-shape-of-water"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/3/a878db1320c4645bcc303d5a6eb1021e-53.jpg" alt="The Shape of Water Image" /></a></div></div></li><li class="product limited_release_product has_small_image alt"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/psychopaths">Psychopaths</a></h3></div><a class="basic_stat product_score" href="/movie/psychopaths">
+
+        
+<span class="metascore_w medium movie negative">37</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">December 1, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            Not Rated
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Ashley Bell,                                                             Carson Nicely,                                                             James Hébert,                                                             Jamie Ann Burke,                                                             Jeffrey Daniel Phillips,                                                             Jeremy Gardner,                                                             Larry Fessenden,                                                             Mark Kassen,                                                             Matt Mercer,                                                             Miranda Parham,                                                             Ross Francis                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Horror                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_tbd">tbd</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">85 min</span>
+                    </li>
+                                                
+            </ul>
+
+                            <div class="product_basics release_type">Limited Release</div>
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/psychopaths"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/4/658201f3a0597e109020d4fff0e3958a-53.jpg" alt="Psychopaths Image" /></a></div></div></li><li class="product limited_release_product has_small_image"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/coco-2017">Coco</a></h3></div><a class="basic_stat product_score" href="/movie/coco-2017">
+
+        
+<span class="metascore_w medium movie positive">81</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">November 22, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            PG
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Alanna Ubach,                                                             Alfonso Arau,                                                             Anthony Gonzalez,                                                             Benjamin Bratt,                                                             Cheech Marin,                                                             Edward James Olmos,                                                             Gabriel Iglesias,                                                             Gael García Bernal,                                                             Herbert Siguenza,                                                             Jaime Camil,                                                             John Ratzenberger,                                                             Lombardo Boyar,                                                             Natalia Cordova-Buckley,                                                             Renee Victor,                                                             Selene Luna,                                                             Sofía Espinosa                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Adventure,                                                             Mystery,                                                             Fantasy,                                                             Horror,                                                             Comedy,                                                             Animation,                                                             Family,                                                             Musical                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_outstanding">8.4</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">105 min</span>
+                    </li>
+                                                
+            </ul>
+
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/coco-2017"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/4/868a9210a8e4d9da4a0008c661241250-53.jpg" alt="Coco Image" /></a></div></div></li><li class="product limited_release_product has_small_image alt"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/angelica">Angelica</a></h3></div><a class="basic_stat product_score" href="/movie/angelica">
+
+        
+<span class="metascore_w medium movie mixed">56</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">November 17, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            Not Rated
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Charles Keating,                                                             Daniel Gerroll,                                                             Ed Stoppard,                                                             Glynnis O'Connor,                                                             Henry Stram,                                                             James Norton,                                                             Janet McTeer,                                                             Jena Malone,                                                             Stephanie Inorio,                                                             Tovah Feldshuh                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Drama,                                                             Thriller,                                                             Horror                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_tbd">tbd</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">95 min</span>
+                    </li>
+                                                
+            </ul>
+
+                            <div class="product_basics release_type">Limited Release</div>
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/angelica"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/7/30209b1ba46f97a502bff615fd00b657-53.jpg" alt="Angelica Image" /></a></div></div></li><li class="product limited_release_product has_small_image"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/mayhem">Mayhem</a></h3></div><a class="basic_stat product_score" href="/movie/mayhem">
+
+        
+<span class="metascore_w medium movie positive">62</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">November 10, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            Unrated
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            André Eriksen,                                                             Caroline Chikezie,                                                             Claire Dellamar,                                                             Dallas Roberts,                                                             Kerry Fox,                                                             Mark Frost,                                                             Nikola Kent,                                                             Samara Weaving,                                                             Steven Brand,                                                             Steven Yeun                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Action,                                                             Horror                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_favorable">8.0</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">86 min</span>
+                    </li>
+                                                
+            </ul>
+
+                            <div class="product_basics release_type">Limited Release</div>
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/mayhem"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/0/fd5ce17e143e6882375ab8841081013d-53.jpg" alt="Mayhem Image" /></a></div></div></li><li class="product limited_release_product has_small_image alt"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/my-friend-dahmer">My Friend Dahmer</a></h3></div><a class="basic_stat product_score" href="/movie/my-friend-dahmer">
+
+        
+<span class="metascore_w medium movie positive">68</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">November 3, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            Not Rated
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Adam Kroloff,                                                             Alex Wolff,                                                             Anne Heche,                                                             Brady M.K. Dunn,                                                             Cameron McKendry,                                                             Dallas Roberts,                                                             Dontez James,                                                             Harrison Holzer,                                                             Lily Kozub,                                                             Michael Ryan Boehm,                                                             Miles Robbins,                                                             Ross Lynch,                                                             Tommy Nelson,                                                             Vincent Kartheiser,                                                             Zachary Davis Brown                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Biography,                                                             Drama,                                                             Thriller,                                                             Horror,                                                             Crime                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_outstanding">8.8</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">107 min</span>
+                    </li>
+                                                
+            </ul>
+
+                            <div class="product_basics release_type">Limited Release</div>
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/my-friend-dahmer"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/4/2c083602709ee261f4f213cfedab8c33-53.jpg" alt="My Friend Dahmer Image" /></a></div></div></li><li class="product limited_release_product has_small_image"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/amityville-the-awakening">Amityville: The Awakening</a></h3></div><a class="basic_stat product_score" href="/movie/amityville-the-awakening">
+
+        
+<span class="metascore_w medium movie mixed">42</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">October 28, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            PG-13
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Ava Santana Cassano,                                                             Bella Thorne,                                                             Brian Breiter,                                                             Cameron Monaghan,                                                             Dan Martino,                                                             Hunter Goligoski,                                                             Jennifer Jason Leigh,                                                             Jennifer Morrison,                                                             Kurtwood Smith,                                                             Mckenna Grace,                                                             Taylor Spreitler,                                                             Thomas Mann                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Thriller,                                                             Horror                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_mixed">4.4</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">85 min</span>
+                    </li>
+                                                
+            </ul>
+
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/amityville-the-awakening"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/2/b899a2e712e9c3dc46c3cdb18e07e2d4-53.jpg" alt="Amityville: The Awakening Image" /></a></div></div></li><li class="product limited_release_product has_small_image alt"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/jigsaw">Jigsaw</a></h3></div><a class="basic_stat product_score" href="/movie/jigsaw">
+
+        
+<span class="metascore_w medium movie negative">39</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">October 27, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            R
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Bonnie Siu,                                                             Brittany Allen,                                                             Callum Keith Rennie,                                                             Clé Bennett,                                                             Edward Ruttle,                                                             Hannah Emily Anderson,                                                             Josiah Black,                                                             Laura Vandervoort,                                                             Mandela Van Peebles,                                                             Matt Passmore,                                                             Michael Boisvert,                                                             Paul Braunstein,                                                             Sonia Dhillon Tully,                                                             Tina Jung,                                                             Tobin Bell                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Mystery,                                                             Thriller,                                                             Horror,                                                             Crime                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_mixed">6.0</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">92 min</span>
+                    </li>
+                                                
+            </ul>
+
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/jigsaw"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/4/895b92ec441e58fd1c31c8cbb909b346-53.jpg" alt="Jigsaw Image" /></a></div></div></li><li class="product limited_release_product has_small_image"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/creep-2">Creep 2</a></h3></div><a class="basic_stat product_score" href="/movie/creep-2">
+
+        
+<span class="metascore_w medium movie positive">75</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">October 24, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            Not Rated
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Caveh Zahedi,                                                             Desiree Akhavan,                                                             Jeff Man,                                                             Karan Soni,                                                             Kyle Field,                                                             Mark Duplass,                                                             Patrick Brice                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Thriller,                                                             Horror                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_favorable">6.8</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">80 min</span>
+                    </li>
+                                                
+            </ul>
+
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/creep-2"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/0/f572c0278cd934441d889e1596d30c0f-53.jpg" alt="Creep 2 Image" /></a></div></div></li><li class="product limited_release_product has_small_image alt"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/leatherface">Leatherface</a></h3></div><a class="basic_stat product_score" href="/movie/leatherface">
+
+        
+<span class="metascore_w medium movie mixed">40</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">October 20, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            R
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Boris Kabakchiev,                                                             Christopher Adamson,                                                             Dimo Alexiev,                                                             Finn Jones,                                                             James Bloor,                                                             Jessica Madsen,                                                             Julian Kostov,                                                             Lili Taylor,                                                             Nicole Andrews,                                                             Sam Coleman,                                                             Sam Strike,                                                             Simone Levin,                                                             Stephen Dorff,                                                             Vanessa Grasse                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Thriller,                                                             Horror                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_mixed">5.9</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">90 min</span>
+                    </li>
+                                                
+            </ul>
+
+                            <div class="product_basics release_type">Limited Release</div>
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/leatherface"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/5/d133d008224bcbeda720d1d68ca3e1df-53.jpg" alt="Leatherface Image" /></a></div></div></li><li class="product limited_release_product has_small_image"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/the-killing-of-a-sacred-deer">The Killing of a Sacred Deer</a></h3></div><a class="basic_stat product_score" href="/movie/the-killing-of-a-sacred-deer">
+
+        
+<span class="metascore_w medium movie positive">73</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">October 20, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            R
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Alicia Silverstone,                                                             Anita Farmer Bergman,                                                             Barry Keoghan,                                                             Bill Camp,                                                             Colin Farrell,                                                             Denise Barone,                                                             Dori Lucas,                                                             Jerry Pope,                                                             Josephine Elle,                                                             Lea Hutton Beasmore,                                                             Megan Chelf Fisher,                                                             Nicole Kidman,                                                             Rachael Mcadams,                                                             Raffey Cassidy,                                                             Sunny Suljic,                                                             William Cross,                                                             William Willet                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Drama,                                                             Mystery,                                                             Thriller,                                                             Horror                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_favorable">7.0</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">121 min</span>
+                    </li>
+                                                
+            </ul>
+
+                            <div class="product_basics release_type">Limited Release</div>
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/the-killing-of-a-sacred-deer"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/5/6a1ca4165e7fb79e55cbae1a757815cc-53.jpg" alt="The Killing of a Sacred Deer Image" /></a></div></div></li><li class="product limited_release_product has_small_image alt"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/boo-2!-a-madea-halloween">Tyler Perry's Boo 2! A Madea Halloween</a></h3></div><a class="basic_stat product_score" href="/movie/boo-2!-a-madea-halloween">
+
+        
+<span class="metascore_w medium movie negative">17</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">October 20, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            PG-13
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Andre Hall,                                                             Brock O'Hurn,                                                             Cassi Davis,                                                             Chandra Currelley-Young,                                                             Diamond White,                                                             Emily Hinkler,                                                             Inanna Sarkis,                                                             Jc Caylen,                                                             Lexy Panterra,                                                             Mike Tornabene,                                                             Patrice Lovely,                                                             Taja V. Simpson,                                                             Tito Ortiz,                                                             Tyler Perry,                                                             Yousef Erakat                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Horror,                                                             Comedy                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_unfavorable">2.1</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">101 min</span>
+                    </li>
+                                                
+            </ul>
+
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/boo-2!-a-madea-halloween"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/5/cf06f2c6bea5edba35c70c37ae0d002b-53.jpg" alt="Tyler Perry's Boo 2! A Madea Halloween Image" /></a></div></div></li><li class="product limited_release_product has_small_image"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/1922">1922</a></h3></div><a class="basic_stat product_score" href="/movie/1922">
+
+        
+<span class="metascore_w medium movie positive">70</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">October 20, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            TV-MA
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Anna Louise Sargeant,                                                             Bob Frazer,                                                             Brian d'Arcy James,                                                             Bruce Blain,                                                             Danielle Klaudt,                                                             Dylan Schmid,                                                             Eric Keenleyside,                                                             Graeme Duffy,                                                             Kaitlyn Bernard,                                                             Molly Parker,                                                             Neal McDonough,                                                             Nikolai Witschl,                                                             Patrick Keating,                                                             Roan Curtis,                                                             Spencer Brown,                                                             Tanya Champoux,                                                             Thomas Jane                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Drama,                                                             Mystery,                                                             Thriller,                                                             Horror,                                                             Crime                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_favorable">6.8</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">102 min</span>
+                    </li>
+                                                
+            </ul>
+
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/1922"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/2/49075a821360491aa6fc11d1e4a92fc7-53.jpg" alt="1922 Image" /></a></div></div></li><li class="product limited_release_product has_small_image alt"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/the-snowman">The Snowman</a></h3></div><a class="basic_stat product_score" href="/movie/the-snowman">
+
+        
+<span class="metascore_w medium movie negative">23</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">October 20, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            R
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Charlotte Gainsbourg,                                                             Chloë Sevigny,                                                             David Dencik,                                                             J.K. Simmons,                                                             James D'Arcy,                                                             Jamie Clayton,                                                             Jonas Karlsson,                                                             Michael Fassbender,                                                             Michael Yates,                                                             Rebecca Ferguson,                                                             Ronan Vibert,                                                             Silvia Busuioc,                                                             Toby Jones,                                                             Val Kilmer                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Drama,                                                             Mystery,                                                             Thriller,                                                             Horror,                                                             Crime                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_unfavorable">3.3</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">119 min</span>
+                    </li>
+                                                
+            </ul>
+
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/the-snowman"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/8/9fcac383cfa5e36b30e34d4bf3601084-53.jpg" alt="The Snowman Image" /></a></div></div></li><li class="product limited_release_product has_small_image"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/tragedy-girls">Tragedy Girls</a></h3></div><a class="basic_stat product_score" href="/movie/tragedy-girls">
+
+        
+<span class="metascore_w medium movie mixed">58</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">October 20, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            R
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Alexandra Shipp,                                                             Austin Abrams,                                                             Brianna Hildebrand,                                                             Craig Robinson,                                                             Elise Neal,                                                             Jack Quaid,                                                             Josh Hutcherson,                                                             Kevin Durand,                                                             Nicky Whelan,                                                             Rosalind Chao,                                                             Timothy V. Murphy,                                                             Tory Stolper                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Horror,                                                             Comedy                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_tbd">tbd</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">98 min</span>
+                    </li>
+                                                
+            </ul>
+
+                            <div class="product_basics release_type">Limited Release</div>
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/tragedy-girls"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/4/28a525faf6a7392847a1acc239b8642e-53.jpg" alt="Tragedy Girls Image" /></a></div></div></li><li class="product limited_release_product has_small_image alt"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/happy-death-day">Happy Death Day</a></h3></div><a class="basic_stat product_score" href="/movie/happy-death-day">
+
+        
+<span class="metascore_w medium movie mixed">57</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">October 13, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            PG-13
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Brady Lewis,                                                             Charles Aitken,                                                             Donna DuPlantier,                                                             GiGi Erneta,                                                             Israel Broussard,                                                             Jason Bayle,                                                             Jessica Rothe,                                                             Laura Clifton,                                                             Phi Vu,                                                             Rachel Matthews,                                                             Ramsey Anderson,                                                             Rob Mello,                                                             Ruby Modine,                                                             Tenea Intriago                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Mystery,                                                             Thriller,                                                             Horror                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_favorable">6.6</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">96 min</span>
+                    </li>
+                                                
+            </ul>
+
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/happy-death-day"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/0/12e17dfb602d24003a8aadf3d94ff5b2-53.jpg" alt="Happy Death Day Image" /></a></div></div></li><li class="product limited_release_product has_small_image"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/better-watch-out">Better Watch Out</a></h3></div><a class="basic_stat product_score" href="/movie/better-watch-out">
+
+        
+<span class="metascore_w medium movie positive">66</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">October 6, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            R
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Aleks Mikic,                                                             Alexandra Matusko,                                                             Beau Andre,                                                             Brendan Clearkin,                                                             Dacre Montgomery,                                                             Ed Oxenbould,                                                             Georgia Holland,                                                             Levi Miller,                                                             Michi Fifer,                                                             Olivia DeJonge,                                                             Patrick Warburton,                                                             Tara Jade Borg,                                                             Tricia Mary Hennessy,                                                             Virginia Madsen                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Thriller,                                                             Horror,                                                             Comedy                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_mixed">5.7</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">89 min</span>
+                    </li>
+                                                
+            </ul>
+
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/better-watch-out"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/9/bb8a4bc6626462d9046e4588fc53e28b-53.jpg" alt="Better Watch Out Image" /></a></div></div></li><li class="product limited_release_product has_small_image alt"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/the-osiris-child">The Osiris Child</a></h3></div><a class="basic_stat product_score" href="/movie/the-osiris-child">
+
+        
+<span class="metascore_w medium movie mixed">55</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">October 6, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            Not Rated
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Bren Foster,                                                             Daniel MacPherson,                                                             Dwaine Stevenson,                                                             Grace Huang,                                                             Isabel Lucas,                                                             Kellan Lutz,                                                             Luke Ford,                                                             Rachel Griffiths,                                                             Teagan Croft,                                                             Temuera Morrison                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Action,                                                             Adventure,                                                             Sci-Fi,                                                             Drama,                                                             Thriller,                                                             Horror                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_tbd">tbd</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">95 min</span>
+                    </li>
+                                                
+            </ul>
+
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/the-osiris-child"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/6/616a5ce2327046d011c8b2e9e322efef-53.jpg" alt="The Osiris Child Image" /></a></div></div></li><li class="product limited_release_product has_small_image"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/dont-sleep">Don't Sleep</a></h3></div><a class="basic_stat product_score" href="/movie/dont-sleep">
+
+        
+<span class="metascore_w medium movie negative">26</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">September 29, 2017</span>
+                        </li>
+                                                                                        <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Alex Carter,                                                             Alex Rocco,                                                             Andrew Caldwell,                                                             Cary Elwes,                                                             Charlbi Dean Kriek,                                                             Chloe Noelle,                                                             Dash Williams,                                                             Dominic Sherwood,                                                             Drea de Matteo,                                                             Jill Hennessy,                                                             Marem Hassler                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Thriller,                                                             Horror                                                    </span>
+                    </li>
+                                                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">101 min</span>
+                    </li>
+                                                
+            </ul>
+
+                            <div class="product_basics release_type">Limited Release</div>
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/dont-sleep"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/8/18430d1a62f5f7d6d18b6b2e8f789529-53.jpg" alt="Don't Sleep Image" /></a></div></div></li><li class="product limited_release_product has_small_image alt"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/geralds-game">Gerald's Game</a></h3></div><a class="basic_stat product_score" href="/movie/geralds-game">
+
+        
+<span class="metascore_w medium movie positive">77</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">September 29, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            TV-MA
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Adalyn Jones,                                                             Ben Pronsky,                                                             Bruce Greenwood,                                                             Bryce Harper,                                                             Carel Struycken,                                                             Carla Gugino,                                                             Chiara Aurelia,                                                             Chuck Borden,                                                             Gwendolyn Mulamba,                                                             Henry Thomas,                                                             James Flanagan,                                                             Jon Arthur,                                                             Kate Siegel,                                                             Kimberly Battista,                                                             Natalie Roers,                                                             Stu Cookson,                                                             Tom Glynn,                                                             Victoria Hardway                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Drama,                                                             Thriller,                                                             Horror                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_favorable">7.1</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">103 min</span>
+                    </li>
+                                                
+            </ul>
+
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/geralds-game"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/2/1a79ba4fee694c9ff434db9f5ef23e59-53.jpg" alt="Gerald's Game Image" /></a></div></div></li><li class="product limited_release_product has_small_image"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/flatliners-2017">Flatliners</a></h3></div><a class="basic_stat product_score" href="/movie/flatliners-2017">
+
+        
+<span class="metascore_w medium movie negative">27</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">September 29, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            PG-13
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Anna Arden,                                                             Beau Mirchoff,                                                             Charlotte McKinney,                                                             Daniela Barbosa,                                                             Diego Luna,                                                             Ellen Page,                                                             Ellie Patrikios,                                                             Jacob Soley,                                                             James Norton,                                                             Kiefer Sutherland,                                                             Kiersey Clemons,                                                             Madison Brydges,                                                             Miguel Anthony,                                                             Nina Dobrev,                                                             Steve Byers,                                                             Tyler Hynes                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Sci-Fi,                                                             Drama,                                                             Thriller,                                                             Horror                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_unfavorable">2.9</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">110 min</span>
+                    </li>
+                                                
+            </ul>
+
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/flatliners-2017"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/2/3588c5c31c2f9ab4a9a5841cdd50fe03-53.jpg" alt="Flatliners Image" /></a></div></div></li><li class="product limited_release_product has_small_image alt"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/friend-request">Friend Request</a></h3></div><a class="basic_stat product_score" href="/movie/friend-request">
+
+        
+<span class="metascore_w medium movie negative">31</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">September 22, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            R
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Alycia Debnam Carey,                                                             Brit Morgan,                                                             Brooke Markham,                                                             Connor Paolo,                                                             Lee Raviv,                                                             Liesl Ahlers,                                                             Sean Marquette,                                                             Shashawnee Hall,                                                             Susan Danford,                                                             William Moseley                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Thriller,                                                             Horror                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_unfavorable">3.8</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">92 min</span>
+                    </li>
+                                                
+            </ul>
+
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/friend-request"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/8/0523bf8658fd3b46f38f80fef10fd488-53.jpg" alt="Friend Request Image" /></a></div></div></li><li class="product limited_release_product has_small_image"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/mother!">mother!</a></h3></div><a class="basic_stat product_score" href="/movie/mother!">
+
+        
+<span class="metascore_w medium movie positive">74</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">September 15, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            R
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Amanda Chiu,                                                             Brian Gleeson,                                                             Domhnall Gleeson,                                                             Ed Harris,                                                             Eric Davis,                                                             Javier Bardem,                                                             Jennifer Lawrence,                                                             Jovan Adepo,                                                             Kristen Wiig,                                                             Michelle Pfeiffer,                                                             Patricia Summersett,                                                             Stefan Simchowitz,                                                             Stephen McHattie                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Drama,                                                             Mystery,                                                             Thriller,                                                             Horror                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_favorable">6.9</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">121 min</span>
+                    </li>
+                                                
+            </ul>
+
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/mother!"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/4/583ee52ab485a03c349c67709b44629a-53.jpg" alt="mother! Image" /></a></div></div></li><li class="product limited_release_product has_small_image alt"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/against-the-night">Against the Night</a></h3></div><a class="basic_stat product_score" href="/movie/against-the-night">
+
+        
+<span class="metascore_w medium movie negative">26</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">September 15, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            Not Rated
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Amy Zenone,                                                             Erik Kochenberger,                                                             Frank Whaley,                                                             Hannah Kleeman,                                                             Josh Cahn,                                                             Leah Holleran,                                                             Luke Persiani,                                                             Nicole Souza,                                                             Tim Torre,                                                             Yesenia Linares                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Mystery,                                                             Thriller,                                                             Horror                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_tbd">tbd</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">85 min</span>
+                    </li>
+                                                
+            </ul>
+
+                            <div class="product_basics release_type">Limited Release</div>
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/against-the-night"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/6/8bcc0915d66cf2356ef2a17491a01b1c-53.jpg" alt="Against the Night Image" /></a></div></div></li><li class="product limited_release_product has_small_image"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/it">It</a></h3></div><a class="basic_stat product_score" href="/movie/it">
+
+        
+<span class="metascore_w medium movie positive">70</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">September 8, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            R
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Bill Skarsgård,                                                             Chosen Jacobs,                                                             Finn Wolfhard,                                                             Jack Grazer,                                                             Jaeden Lieberher,                                                             Jake Sim,                                                             Javier Botet,                                                             Jeremy Ray Taylor,                                                             Megan Charpentier,                                                             Nicholas Hamilton,                                                             Owen Teague,                                                             Sophia Lillis,                                                             Steven Williams,                                                             Wyatt Oleff                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Adventure,                                                             Drama,                                                             Thriller,                                                             Horror                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_favorable">8.0</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">135 min</span>
+                    </li>
+                                                
+            </ul>
+
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/it"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/8/ae92ae06d681d7eb2b0374d47787f3f8-53.jpg" alt="It Image" /></a></div></div></li><li class="product limited_release_product has_small_image alt"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/the-limehouse-golem">The Limehouse Golem</a></h3></div><a class="basic_stat product_score" href="/movie/the-limehouse-golem">
+
+        
+<span class="metascore_w medium movie positive">63</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">September 8, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            Not Rated
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Adam Brown,                                                             Amelia Crouch,                                                             Bill Nighy,                                                             Damien Thomas,                                                             Daniel Cerqueira,                                                             Daniel Mays,                                                             David Bamber,                                                             Douglas Booth,                                                             Eddie Marsan,                                                             Henry Goodman,                                                             Louisa-May Parker,                                                             María Valverde,                                                             Michael Jenn,                                                             Morgan Watkins,                                                             Olivia Cooke,                                                             Patrick Durham,                                                             Paul Ritter,                                                             Peter Sullivan,                                                             Sam Reid                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Thriller,                                                             Horror                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_mixed">4.5</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">109 min</span>
+                    </li>
+                                                
+            </ul>
+
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/the-limehouse-golem"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/3/4ff04eb37cb3bd6c4f0a44cf97c0a236-53.jpg" alt="The Limehouse Golem Image" /></a></div></div></li><li class="product limited_release_product has_small_image"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/jackals">Jackals</a></h3></div><a class="basic_stat product_score" href="/movie/jackals">
+
+        
+<span class="metascore_w medium movie negative">33</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">September 1, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            Not Rated
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Alex Castillo,                                                             Alex Kingi,                                                             Alyssa Julya Smith,                                                             Ben Sullivan,                                                             Carol Abney,                                                             Cassie Hernandez,                                                             Chelsea Ricketts,                                                             Deborah Kara Unger,                                                             Jason Scott Jenkins,                                                             Johnathon Schaech,                                                             Nick Roux,                                                             Stephen Dorff                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Thriller,                                                             Horror                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_mixed">5.3</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">85 min</span>
+                    </li>
+                                                
+            </ul>
+
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/jackals"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/2/68eaf5e42668348c5c515bbb15da07fb-53.jpg" alt="Jackals Image" /></a></div></div></li><li class="product limited_release_product has_small_image alt"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/temple">Temple</a></h3></div><a class="basic_stat product_score" href="/movie/temple">
+
+        
+<span class="metascore_w medium movie negative">23</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">September 1, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            TV-MA
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Asahi Uchida,                                                             Brandon Sklenar,                                                             Logan Huffman,                                                             Naoto Takenaka,                                                             Natalia Warner                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            History,                                                             Horror                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_tbd">tbd</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">78 min</span>
+                    </li>
+                                                
+            </ul>
+
+                            <div class="product_basics release_type">Limited Release</div>
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/temple"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/8/73766a1a7bf38feeb9541802a95da604-53.jpg" alt="Temple Image" /></a></div></div></li><li class="product limited_release_product has_small_image"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/the-vault">The Vault</a></h3></div><a class="basic_stat product_score" href="/movie/the-vault">
+
+        
+<span class="metascore_w medium movie mixed">50</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">September 1, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            Not Rated
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Clifton Collins Jr.,                                                             Francesca Fisher-Eastwood,                                                             James Franco,                                                             Jeff Gum,                                                             Jill Jane Clements,                                                             Keith Loneker,                                                             Michael Milford,                                                             Q'orianka Kilcher,                                                             Scott Haze,                                                             Taryn Manning                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Thriller,                                                             Horror                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_mixed">4.3</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">91 min</span>
+                    </li>
+                                                
+            </ul>
+
+                            <div class="product_basics release_type">Limited Release</div>
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/the-vault"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/7/9a58ab3e58294526a6e8d5f884f9b2b7-53.jpg" alt="The Vault Image" /></a></div></div></li><li class="product limited_release_product has_small_image last_product alt"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/red-christmas">Red Christmas</a></h3></div><a class="basic_stat product_score" href="/movie/red-christmas">
+
+        
+<span class="metascore_w medium movie mixed">52</span>
+</a></div>                <div class="more_stats extended_stats">
+            <ul class="more_stats">
+                                                            <li class="stat release_date">
+                            <span class="label">Release Date:</span>
+                            <span class="data">August 25, 2017</span>
+                        </li>
+                                                                        <li class="stat rating">
+                        <span class="label">Rated:</span>
+                        <span class="data">
+                                                            Not Rated
+                                                    </span>
+                    </li>
+                                                    <li class="stat cast">
+                        <span class="label">Starring:</span>
+                        <span class="data">
+                                                            Anthony Jensen,                                                             Atlas Adams,                                                             Bjorn Stewart,                                                             David Collins,                                                             Dee Wallace,                                                             Deelia Meriel,                                                             Geoff Morrell,                                                             Gerard Odwyer,                                                             Janis McGavin,                                                             Robert Anderson,                                                             Sam Campbell,                                                             Sarah Bishop                                                    </span>
+                    </li>
+                                                    <li class="stat genre">
+                        <span class="label">Genre(s):</span>
+                        <span class="data">
+                                                            Thriller,                                                             Horror                                                    </span>
+                    </li>
+                                                                        <li class="stat product_avguserscore">
+                            <span class="label">User Score:</span>
+    <span class="data textscore textscore_tbd">tbd</span>
+
+                    </li>
+                                                                                        <li class="stat runtime">
+                        <span class="label">Runtime:</span>
+                        <span class="data">82 min</span>
+                    </li>
+                                                
+            </ul>
+
+                    </div>
+    </div></div><div class="product_basics product_image small_image"><a href="/movie/red-christmas"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/4/a695ad284254bf89872eb45d29a45709-53.jpg" alt="Red Christmas Image" /></a></div></div></li></ol>
+
+
+            </div>
+        </div>
+
+        		
+            </div>
+
+
+            <div class="page_nav">
+    <div class="page_nav_wrap">
+        <div class="page_flipper">
+                            <span class="flipper prev"><span class="action"><span class="text">prev</span></span></span>
+                                        <span class="flipper next"><a class="action" rel="next" href="/browse/movies/genre/date/horror?view=detailed&page=1"><span class="text">next</span></a></span>
+                    </div>
+        <div class="pages">
+            <div class="label">Page:</div>
+            <ul class="pages"><li class="page first_page active_page"><span class="page_num">1</span></li><li class="page"><a class="page_num" href="/browse/movies/genre/date/horror?view=detailed&page=1">2</a></li><li class="page"><a class="page_num" href="/browse/movies/genre/date/horror?view=detailed&page=2">3</a></li><li class="page"><a class="page_num" href="/browse/movies/genre/date/horror?view=detailed&page=3">4</a></li><li class="page"><a class="page_num" href="/browse/movies/genre/date/horror?view=detailed&page=4">5</a></li><li class="page"><a class="page_num" href="/browse/movies/genre/date/horror?view=detailed&page=5">6</a></li><li class="page"><a class="page_num" href="/browse/movies/genre/date/horror?view=detailed&page=6">7</a></li><li class="page"><a class="page_num" href="/browse/movies/genre/date/horror?view=detailed&page=7">8</a></li><li class="page"><a class="page_num" href="/browse/movies/genre/date/horror?view=detailed&page=8">9</a></li><li class="page last_page"><span class="page_gap">&hellip;</span><a class="page_num" href="/browse/movies/genre/date/horror?view=detailed&page=32">33</a></li></ul>
+        </div>
+    </div>
+</div>
+    </div>
+
+
+                                                            <div class="mc_obbtm">
+                            
+        
+        
+
+        
+
+
+        <div id="taboola-below-content-thumbnails"></div>
+        
+        <script type="text/javascript">
+            var placement = 'desktop list_page Below Content Thumbnails';
+            if ( window.metac_tContentWidget ) {
+                window.metac_tContentWidget.push(placement);
+                window._taboola = window._taboola || [];
+                    _taboola.push({
+                    mode: 'alternating-thumbnails-a',
+                    container: 'taboola-below-content-thumbnails',
+                    placement: placement,
+                    target_type: 'mix'
+                });
+            }
+        </script>
+        
+
+
+            
+
+                        </div>
+                                                </div>
+                            <div id="side" class="col side_col">
+                    
+    
+    
+    
+        <div class="module products_module list_product_summaries_module  contain_module">
+        <div class="head head_type_1"><div class="head_wrap"><h2 class="module_title">Coming Soon</h2><div class="more"><span class="more_item"><a href="/browse/movies/release-date/coming-soon/date">See All &raquo;</a></span></div></div></div>
+                  
+        <div class="body">
+                                    <div class="body_wrap">
+                
+                
+
+<ol class="list_products list_product_summaries"><li class="product limited_release_product has_small_image first_product"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/polaroid">Polaroid</a></h3></div></div>    
+
+</div></div><div class="product_basics product_image small_image"><a href="/movie/polaroid"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/7/7418eed18a13b7aaeda1b4962ed375c6-53.jpg" alt="Polaroid Image" /></a></div></div></li><li class="product limited_release_product has_small_image alt"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/before-i-wake">Before I Wake</a></h3></div></div>    
+
+</div></div><div class="product_basics product_image small_image"><a href="/movie/before-i-wake"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/5/6dc09be069d26bb626c40324ecdb7103-53.jpg" alt="Before I Wake Image" /></a></div></div></li><li class="product limited_release_product has_small_image last_product"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/movie/friday-the-13th-2017">Friday the 13th</a></h3></div></div>    
+
+</div></div><div class="product_basics product_image small_image"><a href="/movie/friday-the-13th-2017"><img class="product_image small_image" src="http://static.metacritic.com/images/products/movies/4/9686b1801b573e0efcba372811999c5c-53.jpg" alt="Friday the 13th Image" /></a></div></div></li></ol>
+
+
+            </div>
+        </div>
+
+        		
+            </div>
+
+
+
+
+                        
+                        <div id="mpu_plus_top" class="ad_unit">
+                            
+                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_mpu_plus_top = googletag.defineSlot("/8264/aw-metacritic/movies",[[300,250],[300,600]], "mpu_plus_top").addService(googletag.pubads()).setTargeting("pos", "top");
+                                                        
+                        
+                        });
+                        
+
+                        window.metac_ads_pushdisplay.push("mpu_plus_top");
+                                    </script>
+                                        </div>
+                        
+
+
+
+    <div class="module supplements_module" id="supplementary-nav">
+    <div class="head head_type_1"><div class="head_wrap"><h2 class="module_title">Essential Links</h2></div></div>
+    <div class="body">
+        <div class="body_wrap">
+                        <div id="supplementary-items" class="supplements supplement_links">
+                <ol class="supplements supplement_links">
+                                                                                                    <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;1'}" href="http://www.metacritic.com/browse/movies/release-date/theaters/date">New Releases in Theaters</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;2'}" href="http://www.metacritic.com/browse/movies/release-date/coming-soon/date?view=condensed">Coming Soon to Theaters</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;3'}" href="http://www.metacritic.com/feature/now-streaming-on-amazon-instant-video">New on Amazon Instant Video</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;4'}" href="http://www.metacritic.com/feature/now-streaming-on-netflix">New on Netflix</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;5'}" href="http://www.metacritic.com/browse/dvds/release-date/new-releases/date">New on DVD/Blu-ray</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;6'}" href="/feature/dvd-blu-ray-release-calendar-october-2017">Coming Soon to DVD/Blu-ray</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;7'}" href="http://www.metacritic.com/browse/movies/score/metascore/all?sort=desc ">All-Time High Scores </a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;8'}" href="http://www.metacritic.com/browse/movies/score/metascore/year/filtered?sort=desc&year_selected=2017">2017 High Scores</a>
+                            </li>
+                                                            </ol>
+            </div>
+                                    <div id="supplementary-articles" class="supplements supplement_articles">
+                <ol class="supplements supplement_articles">
+                                                                                                    <li class="supplement supplement_link">
+                                <a class="dw_tag {'tag':'supplementary-nav;article;1'}" href="/feature/2017-film-awards-and-nominations-scorecard">Best of 2017: Film Awards and Nominations</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="dw_tag {'tag':'supplementary-nav;article;2'}" href="/feature/film-critics-list-the-top-10-movies-of-2017">Best of 2017: Film Critic Top 10 Lists</a>
+                            </li>
+                                                                                                        </ol>
+                <div class="more_supplements more_articles">
+                    
+                    <a class="dw_tag {'tag':'supplementary-nav;more-articles'}" href="/feature">More articles &raquo;</a>
+                </div>
+            </div>
+                    </div>
+    </div>
+</div>
+
+
+    
+
+    <div id="taboola-right-rail-thumbnails"></div>
+    
+    <script type="text/javascript">
+        if ( window._taboola && window.metac_tContentWidget ) {
+                        var placement = 'desktop list_page Right Rail Thumbnails';
+            window.metac_tContentWidget.push(placement);
+            _taboola.push({
+                mode: 'alternating-thumbnails-rr',
+                container: 'taboola-right-rail-thumbnails',
+                placement: placement,
+                target_type: 'mix'
+            });
+                    }
+    </script>
+    
+
+
+
+
+
+
+
+<div class="module list_trailers">
+    <div class="head head_type_2"><div class="head_wrap"><h2 class="module_title">Most talked about trailers</h2><div class="more"><span class="more_item"><a href="/browse/movies/trailers/date">See all &raquo;</a></span></div></div></div>
+    <div class="body">
+                <ul class="trailers">
+                                            <li class="trailer alt">
+                    <div class="trailer_wrap">
+                        <div class="trailer_title">
+                            <h3 class="trailer_title"><a href="/movie/hell-or-high-water/trailers/6690470">Hell Or High Water</a></h3>
+                                                    </div>
+                        <div class="details">
+                            <div class="thumb video_thumb">
+                                <a href="/movie/hell-or-high-water/trailers/6690470">
+                                    <span class="play_button">Play Video</span>                                    <img src="http://content.internetvideoarchive.com/content/photos/10698/151940_139.jpg" alt="Hell Or High Water" />
+                                </a>
+                            </div>
+                            <div class="trailer_stats">
+                                <ul class="trailer_stats">
+                                    
+                                    <li class="trailer_stat duration">1:45</li>                                    <li class="trailer_stat count views">(29108 views)</li>                                                                    </ul>
+                            </div>
+                            <div class="trailer_actions">
+                                <div class="action">
+                                    <span class="now_playing">now playing</span>
+                                    <span class="play_action">
+                                        <span><a href="/movie/hell-or-high-water/trailers/6690470">play now</a></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                                                            <li class="trailer">
+                    <div class="trailer_wrap">
+                        <div class="trailer_title">
+                            <h3 class="trailer_title"><a href="/movie/dont-breathe/trailers/6656547">Don't Breathe</a></h3>
+                                                    </div>
+                        <div class="details">
+                            <div class="thumb video_thumb">
+                                <a href="/movie/dont-breathe/trailers/6656547">
+                                    <span class="play_button">Play Video</span>                                    <img src="http://content.internetvideoarchive.com/content/photos/10763/643072_039.jpg" alt="Don't Breathe" />
+                                </a>
+                            </div>
+                            <div class="trailer_stats">
+                                <ul class="trailer_stats">
+                                    
+                                    <li class="trailer_stat duration">2:29</li>                                    <li class="trailer_stat count views">(22564 views)</li>                                                                    </ul>
+                            </div>
+                            <div class="trailer_actions">
+                                <div class="action">
+                                    <span class="now_playing">now playing</span>
+                                    <span class="play_action">
+                                        <span><a href="/movie/dont-breathe/trailers/6656547">play now</a></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                                                            <li class="trailer alt">
+                    <div class="trailer_wrap">
+                        <div class="trailer_title">
+                            <h3 class="trailer_title"><a href="/movie/arrival/trailers/7220602">Arrival</a></h3>
+                                                    </div>
+                        <div class="details">
+                            <div class="thumb video_thumb">
+                                <a href="/movie/arrival/trailers/7220602">
+                                    <span class="play_button">Play Video</span>                                    <img src="/images/products/movies/120w-movie.jpg" alt="Arrival" />
+                                </a>
+                            </div>
+                            <div class="trailer_stats">
+                                <ul class="trailer_stats">
+                                    
+                                    <li class="trailer_stat duration">2:03</li>                                    <li class="trailer_stat count views">(18448 views)</li>                                                                    </ul>
+                            </div>
+                            <div class="trailer_actions">
+                                <div class="action">
+                                    <span class="now_playing">now playing</span>
+                                    <span class="play_action">
+                                        <span><a href="/movie/arrival/trailers/7220602">play now</a></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                                    </ul>
+    </div>
+	    <div class="foot">
+        <div class="foot_wrap">
+                    
+            <div class="more">
+                <span class="more_item"><a href="/browse/movies/trailers/date">See all trailers &raquo;</a></span>
+            </div>
+                </div>
+    </div>
+
+</div>
+
+
+
+
+                        
+                        <div id="mpu_bottom" class="ad_unit">
+                            
+                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_mpu_bottom = googletag.defineSlot("/8264/aw-metacritic/movies",[300,250], "mpu_bottom").addService(googletag.pubads()).setTargeting("pos", "bottom");
+                                                        
+                        
+                        });
+                        
+
+                        window.metac_ads_pushdisplay.push("mpu_bottom");
+                                    </script>
+                                        </div>
+                        
+
+                </div>
+                    </div>
+    </div>
+        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    
+                        
+                        <div id="leader_bottom" class="ad_unit">
+                            
+                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_leader_bottom = googletag.defineSlot("/8264/aw-metacritic/movies",[[728,90],[970,66],[728,92],[970,250]], "leader_bottom").addService(googletag.pubads()).setTargeting("pos", "bottom");
+                                                        
+                        
+                        });
+                        
+
+                        window.metac_ads_pushdisplay.push("leader_bottom");
+                                    </script>
+                                        </div>
+                        
+
+
+            </div>
+                        </div>
+            
+                        
+                        
+                        <div id="intromercial" class="ad_unit">
+                            
+                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_intromercial = googletag.defineOutOfPageSlot("/8264/aw-metacritic/movies",
+                                    "intromercial").addService(googletag.pubads());
+                                                        
+                        
+                        });
+                        
+
+                        window.metac_ads_pushdisplay.push("intromercial");
+                                    </script>
+                                        </div>
+                        
+
+
+            
+    
+    <div id="mastfoot">
+        
+        
+        <footer id="bottom_footer">
+    <div id="providers">
+	<a href="http://www.allmusic.com">Music title data, credits, and images provided by <span>AMG</span></a>
+	<span class="link_divider">|</span><a href="http://www.imdb.com">Movie title data, credits, and poster art provided by <span>IMDb</span></a>
+	<span class="link_divider">|</span><a href="http://www.internetvideoarchive.com">Video and Images provided by <span>IVA</span></a>
+    <div id="trademark">
+        We Deal With Criticism<sup>&reg;</sup>&nbsp;
+	</div>
+</div>
+
+            <div class="site_links upper">
+                    <a href="http://www.metacritic.com/movie">
+                <span>Movies</span>
+            </a>
+                    <a href="http://www.metacritic.com/tv">
+                <span>TV</span>
+            </a>
+                    <a href="http://www.metacritic.com/music">
+                <span>Music</span>
+            </a>
+                    <a href="http://www.metacritic.com/game/playstation-4">
+                <span>PS4</span>
+            </a>
+                    <a href="http://www.metacritic.com/game/xbox-one">
+                <span>XboxOne</span>
+            </a>
+                    <a href="http://www.metacritic.com/game/switch">
+                <span>Switch</span>
+            </a>
+                    <a href="http://www.metacritic.com/game/pc">
+                <span>PC</span>
+            </a>
+                    <a href="http://www.metacritic.com/game/wii-u">
+                <span>WiiU</span>
+            </a>
+                    <a href="http://www.metacritic.com/game/3ds">
+                <span>3DS</span>
+            </a>
+                    <a href="http://www.metacritic.com/game/playstation-vita">
+                <span>PS Vita</span>
+            </a>
+                    <a href="http://www.metacritic.com/game/ios">
+                <span>iOS</span>
+            </a>
+                    <a href="http://www.metacritic.com/feature">
+                <span>Features</span>
+            </a>
+                    <a href="http://www.metacritic.com/rss">
+                <span>RSS Feeds</span>
+            </a>
+                </div>
+    
+    <div class="pad_top1 pad_btm1">
+        <div class="social_round">
+            <a href="http://www.facebook.com/Metacritic" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/metacritic" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+        </div>
+    </div>
+
+    
+    <div class="about_cbs">
+        <div id="footer_about_links">
+            <a class="first" href="http://www.cbsinteractive.com">About CBS Interactive</a>
+            <span class="link_divider">|</span><a href="http://www.cbsinteractive.com/careers/">Jobs</a>
+            <span class="link_divider">|</span><a href="http://www.cbsinteractive.com/advertise/">Advertise</a>
+            <span class="link_divider">|</span><a href="http://www.metacritic.com/faq">FAQ</a>
+            <span class="link_divider">|</span><a href="http://www.metacritic.com/about-metacritic">About Metacritic</a>
+            <span class="link_divider">|</span><a href="http://www.metacritic.com/contact-us">Contact</a>
+            <span class="link_divider">|</span><span id="footer_privacy"><a href="http://legalterms.cbsinteractive.com/privacy">Privacy Policy</a></span>
+            <span class="link_divider">|</span><span id="footer_terms"><a href="https://cbsi.secure.force.com/CBSi/articles/FAQ/CBSi-Terms-of-Use?template=template_tougl&referer=tougl.com&data=&cfs=default">Terms of Use</a></span>
+        </div>
+        <div id="footer_rights" class="pad_btm2">
+            &copy; 2017 CBS Interactive Inc. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+    </div>
+</div>
+
+<div id="site_scripts" class="dw_tracking">
+     
+<script type="text/javascript" src="/js/omniture/uuid.js"></script>
+<script type="text/javascript">
+    
+    if (self != top) {
+        top.location = self.location;
+    }
+    var MC_UUID = uuid.v1();
+</script>
+
+    
+
+ 
+<script language="JavaScript" type="text/javascript">
+    
+    var utag_data = {
+        isDev:0,
+                            siteType:"desktop web",
+                deviceType:"desktop",
+                siteSection:"movies",
+                pageType:"list_page",
+                pageFindingMethod:"Internal",
+                session: MetaC.adSession() + ':' + MetaC.adSubses(),
+                userId:null,userState:"not authenticated",userType:"anon",bkPath:"/8264/aw-metacritic/movies",_test:"redesign|movie|old",pageViewGuid:MC_UUID
+    };
+    
+    
+    
+    
+    if ( window.eventAmazonBuyView ) {
+        utag_data.eventAmazonBuyView = 1;
+    }
+    if ( window.eventAmazonPivView ) {
+        utag_data.eventAmazonPivView = 1;
+    }
+    
+    
+    
+    if ( MetaC._utagAutoPlay != -1 ) {
+        utag_data.videoAutoPlay = MetaC._utagAutoPlay ? 'on' : 'off';
+    }
+    
+    
+    
+    if ( window.metac_tContentWidget && window.metac_tContentWidget.length > 0 ) {
+        utag_data.contentWidget = window.metac_tContentWidget.join('|');;
+    }
+    
+
+    
+</script>
+
+
+
+
+<script type="text/javascript">
+    
+    
+    var __pv = MetaC.handleGooglePageView();
+    googletag.cmd.push(function() {
+        
+                    googletag.pubads().setTargeting("ptype", "list_page");
+            
+                            googletag.pubads().setTargeting("genre", "");
+                                        googletag.pubads().setTargeting("test", "mcold");
+                
+        googletag.pubads().setTargeting("vguid", MC_UUID);
+        googletag.pubads().setTargeting("session", MetaC.adSession());
+        googletag.pubads().setTargeting("subses", MetaC.adSubses());
+        googletag.pubads().setTargeting("env", "prod");
+                        var parts = window.location.hash.split("=");
+        if ( parts.length > 1 && parts[0] == '#ftag' ) {
+            googletag.pubads().setTargeting("ftag",parts[1]);
+        }
+        
+                
+        
+        if ( window.I11C) {
+            if (window.I11C.Morph && window.I11C.Morph === 1) {
+                utag_data.adBlockRecovery = "unblocked";
+                utag_data.adsAreBlocked = "true";
+
+                var geo = MetaC.Cookie.get('il_geo');
+                if ( geo ) {
+                    geo = MetaC.Cookie.ilParse(geo);
+                    if ( geo && geo.postal_code && geo.country_code ) {
+                        googletag.pubads().setLocation(geo.postal_code + ',' + geo.country_code)
+                    }
+                }
+            } else {
+                utag_data.adBlockRecovery = 'instart_noop';
+                utag_data.adsAreBlocked = "false";
+            }
+        } else {
+            utag_data.adBlockRecovery = 'no_instart';
+            utag_data.adsAreBlocked = "false";
+        }
+
+        googletag.pubads().setTargeting("pv", __pv+""); // must be a string
+
+        googletag.pubads().enableAsyncRendering();
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().collapseEmptyDivs();
+        googletag.enableServices();
+    });
+    
+    
+
+    
+    
+    if ( MetaC && MetaC.Video ) {
+        
+                    MetaC.Video.addIMATargeting("genre", "");
+                    
+    }
+    
+</script>
+
+
+
+
+    
+    
+    
+        <script type="text/JavaScript" src="http://cn.cbsimg.net/cnwk.1d/Aud/javascript/urs.js"></script>
+    
+
+    <script type="text/javascript">
+        if ( window.MetaC && MetaC.URS ) {
+            MetaC.URS.config(227, false);
+        }
+    </script>
+
+
+
+
+
+<script type="text/javascript">
+    (function(a,b,c,d){
+    a='//tags.tiqcdn.com/utag/cbsi/metacriticsite/prod/utag.js';
+    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+</script>
+
+
+
+<!-- Adobe Marketing Cloud Tag Loader Code-->
+
+
+
+
+
+
+    <script type="text/javascript">
+        // amc.on('load', function (event, data) {
+        $(document).ready(function(){
+            setTimeout(function(){
+                MetaC.checkOmniEvents();
+            }, 300);
+        });
+        // });
+    </script>
+
+
+
+
+
+
+<script type="text/javascript">
+    
+    dwVars = {"siteId":"50","onId":"12456","ptId":"9569"};
+    if (typeof DW == "object"){
+        DW.pageParams = dwVars;
+        DW.regSilo = '12';
+        DW.clear();
+    }
+</script>
+
+
+
+
+<script>
+    var cbsiApexGlobal = {
+        'SITE': dwVars.siteId,
+        'NODE': dwVars.onId,
+        'PTYPE':dwVars.ptId
+    };
+</script>
+
+
+
+
+
+
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-22577913-5']);
+    _gaq.push(['_setCustomVar',1,'PageType',dwVars.ptId,3]);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_trackPageLoadTime']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['nT._setAccount', 'UA-27653683-1']);
+    _gaq.push(['nT._setAllowLinker', true]);
+    _gaq.push(['nT._setSampleRate', '1']);
+    _gaq.push(['nT._trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '123113677890173',
+            version    : 'v2.6',
+            channelUrl : 'http://www.metacritic.com/static/fbchannel.html',
+            status     : true,
+            xfbml      : true,
+            cookie     : true
+            });
+         MetaC.FB.initialized();
+        };
+    
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    
+</script>
+
+
+
+<script>
+    window.twttr = (function (d,s,id) {
+      var t, js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+      js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+      return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+    }(document, "script", "twitter-wjs"));
+
+    twttr.ready(function (twttr) {
+        MetaC.Twitter.initialized();
+    });
+</script>
+
+
+
+
+
+
+<script>
+    /* display the google ads now that the html is finished processing */
+    googletag.cmd.push(function(){
+        MetaC.displayAds();
+    });
+</script>
+
+
+
+<script>
+    
+    
+    if ( window._taboola && window.mcwait_taboola == null ) {
+        _taboola.push({flush: true});
+    }
+    
+</script>
+
+
+
+    
+    
+    <script>
+    	if (typeof cbsiLoadOffer == "function"){
+                cbsiLoadOffer(cbsiApexGlobal,1000);
+        }
+    </script>
+    
+</div>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"860f7644b8","applicationID":"2033002","transactionName":"MgQEZ0dYCxEAVRBbDQtOJUZGTQoPTnEBXBAAJw9fQVwXWFtbC0QLAA==","queueTime":0,"applicationTime":1552,"atts":"HkMTEQ9CGE5DV0YIGRgc","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
+
